@@ -5,13 +5,12 @@ def nyc_pigeon_organizer(data)
       new_array = new_array.concat(inner_value)
     end
   end
-  new_hash = {}
+  #new_hash = {}
       new_array = new_array.uniq
-      new_array.each do |n|
-        data.each do |key, value|
-         new_hash = new_hash + n[key]
-      end
-    end
+      new_hash = Hash[new_array.collect {|n| [n, ""] } ]
+      #new_array.each do |n|
+        #data.each do |key, value|
+         #new_hash = new_hash + n[key]
       print new_hash
     #print new_array
     #puts "!!!!!!!!!!!!!!!!!!"
