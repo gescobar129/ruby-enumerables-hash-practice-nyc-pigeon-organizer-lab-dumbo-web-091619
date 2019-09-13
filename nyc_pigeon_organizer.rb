@@ -1,6 +1,6 @@
 def nyc_pigeon_organizer(data)
   new_array = []
-  data.each do |key, value|
+  data.each do |attributes, option|
     value.each do |inner_key, inner_value|
       new_array = new_array.concat(inner_value)
     end
