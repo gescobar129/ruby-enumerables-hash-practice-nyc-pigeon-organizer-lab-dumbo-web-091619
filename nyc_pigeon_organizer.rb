@@ -13,7 +13,7 @@ def nyc_pigeon_organizer(data)
           inner_value.each do |element|
             
             puts new_hash[element]
-            puts ")))))))))))"
+            
           end
         end
       end
