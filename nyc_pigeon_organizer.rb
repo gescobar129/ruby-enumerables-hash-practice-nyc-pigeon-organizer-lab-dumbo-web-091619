@@ -2,20 +2,20 @@ require 'pry'
 
 def nyc_pigeon_organizer(data)
   new_array = []
-  data.each do |attributes, option|
-    option.each do |option_name, name_array|
+  data.each do |attributes, options|
+    options.each do |option_name, name_array|
       new_array = new_array.concat(name_array)
     end
   end
   #new_hash = {}
       new_array = new_array.uniq
       new_hash = Hash[new_array.collect {|n| [n, hash = {}] } ]
-      data.each do |attributes, option|
+      data.each do |attributes, options|
         binding.pry
         sub_hash = {}
         sub_hash[attributes] = [];
         
-        value.each do |option_name, name_array|
+        options.each do |option_name, name_array|
           name_array.each do |name|
             puts "KEYYYYYYYYYYYY"
             puts new_hash.keys[name]
