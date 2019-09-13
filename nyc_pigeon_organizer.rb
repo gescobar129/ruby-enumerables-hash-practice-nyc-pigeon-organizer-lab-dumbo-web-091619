@@ -7,7 +7,7 @@ def nyc_pigeon_organizer(data)
   end
   #new_hash = {}
       new_array = new_array.uniq
-      new_hash = Hash[new_array.collect {|n| [n, hash = {} } ]
+      new_hash = Hash[new_array.collect {|n| [n, hash = Hash.new } ]
       #new_array.each do |n|
         #data.each do |key, value|
          #new_hash = new_hash + n[key]
