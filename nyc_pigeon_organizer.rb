@@ -12,7 +12,7 @@ def nyc_pigeon_organizer(data)
         value.each do |inner_key, inner_value|
           inner_value.each do |element|
             
-            puts new_hash[element]
+            puts new_hash[element] = key
             
           end
         end
