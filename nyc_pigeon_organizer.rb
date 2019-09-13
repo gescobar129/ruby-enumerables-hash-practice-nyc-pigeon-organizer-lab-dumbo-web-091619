@@ -14,6 +14,9 @@ def nyc_pigeon_organizer(data)
             
             puts new_hash[element]
             puts ")))))))))))"
+          end
+        end
+      end
       #new_array.each do |n|
         #data.each do |key, value|
          #new_hash = new_hash + n[key]
