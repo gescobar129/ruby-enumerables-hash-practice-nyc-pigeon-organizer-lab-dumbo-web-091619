@@ -7,10 +7,10 @@ def nyc_pigeon_organizer(data)
       new_array = new_array.concat(name_array)
     end
   end
-  #new_hash = {}
       new_array = new_array.uniq
-      new_hash = Hash[new_array.collect {|n| [n, hash = {}] } ]
+      name_hash = Hash[new_array.collect {|n| [n, hash = {}] } ]
       data.each do |attributes, options|
+        
         sub_hash = {}
         sub_hash[attributes] = [];
         
