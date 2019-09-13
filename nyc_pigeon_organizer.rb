@@ -8,16 +8,16 @@ def nyc_pigeon_organizer(data)
   #new_hash = {}
       new_array = new_array.uniq
       new_hash = Hash[new_array.collect {|n| [n, hash = {}] } ]
-      data.each do |attributes, value|
+      data.each do |attributes, option|
         sub_hash = {}
-        sub_hash[key] = [];
+        sub_hash[attributes] = [];
         
-        value.each do |inner_key, inner_value|
-          inner_value.each do |element|
+        value.each do |option_name, name_array|
+          name_array.each do |name|
             puts "KEYYYYYYYYYYYY"
-            puts new_hash.keys[element]
-            if new_hash.keys.include?(element)
-              sub_hash[key] = sub_hash[key].push(inner_key)
+            puts new_hash.keys[name]
+            if new_hash.keys.include?(name)
+              sub_hash[attributes] = sub_hash[attributes].push(option_name)
             end
           puts sub_hash
           puts "OPOPOPOPOPOPOPOPPPPPOPOOPPOP"
