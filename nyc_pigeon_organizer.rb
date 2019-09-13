@@ -10,12 +10,13 @@ def nyc_pigeon_organizer(data)
       new_hash = Hash[new_array.collect {|n| [n, hash = {}] } ]
       data.each do |key, value|
         sub_hash = {}
+        sub_hash[key] = [];
         
         value.each do |inner_key, inner_value|
           inner_value.each do |element|
             
             if new_hash[element]
-              sub_hash[key]
+              sub_hash[key] = sub_hash[key].push(inner_key)
             puts new_hash[element] = 
             
           end
