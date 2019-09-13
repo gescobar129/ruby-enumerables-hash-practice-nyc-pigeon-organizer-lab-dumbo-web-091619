@@ -17,8 +17,8 @@ def nyc_pigeon_organizer(data)
             
             if new_hash[element]
               sub_hash[key] = sub_hash[key].push(inner_key)
-     
-            
+            end
+          puts sub_hash
           end
         end
       end
