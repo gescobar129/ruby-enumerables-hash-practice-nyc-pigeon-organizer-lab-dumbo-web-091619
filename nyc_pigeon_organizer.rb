@@ -9,6 +9,8 @@ def nyc_pigeon_organizer(data)
       new_array = new_array.uniq
       new_hash = Hash[new_array.collect {|n| [n, hash = {}] } ]
       data.each do |key, value|
+        sub_hash = {}
+        
         value.each do |inner_key, inner_value|
           inner_value.each do |element|
             
