@@ -16,7 +16,10 @@ def nyc_pigeon_organizer(data)
         
         options.each do |option_name, name_array|
           name_array.each do |name|
-              binding.pry
+            
+            if data[attributes][option_name].include?(name)
+              attribute_hash[attributes] = attribute_hash[attributes].push(option_name)
+                            binding.pry
 
             if name_hash.keys.include?(name)
               attribute_hash[attributes] = attribute_hash[attributes].push(option_name)
