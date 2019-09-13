@@ -16,7 +16,7 @@ def nyc_pigeon_organizer(data)
         
         options.each do |option_name, name_array|
           name_array.each do |name|
-                    binding.pry
+              binding.pry
 
             puts new_hash.keys[name]
             if new_hash.keys.include?(name)
