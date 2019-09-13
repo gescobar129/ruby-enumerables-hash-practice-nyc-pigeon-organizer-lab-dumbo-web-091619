@@ -10,7 +10,10 @@ def nyc_pigeon_organizer(data)
       new_hash = Hash[new_array.collect {|n| [n, hash = {}] } ]
       data.each do |key, value|
         value.each do |inner_key, inner_value|
-          
+          inner_value.each do |element|
+            
+            puts new_hash[element]
+            puts ")))))))))))"
       #new_array.each do |n|
         #data.each do |key, value|
          #new_hash = new_hash + n[key]
