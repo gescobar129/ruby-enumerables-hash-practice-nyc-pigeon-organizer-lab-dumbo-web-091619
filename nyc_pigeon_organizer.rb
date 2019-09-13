@@ -15,6 +15,7 @@ def nyc_pigeon_organizer(data)
           inner_value.each do |element|
             
             if new_hash[element]
+              sub_hash[]
             puts new_hash[element] = 
             
           end
