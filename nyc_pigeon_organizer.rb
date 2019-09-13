@@ -11,13 +11,13 @@ def nyc_pigeon_organizer(data)
       new_array = new_array.uniq
       new_hash = Hash[new_array.collect {|n| [n, hash = {}] } ]
       data.each do |attributes, options|
-        binding.pry
         sub_hash = {}
         sub_hash[attributes] = [];
         
         options.each do |option_name, name_array|
           name_array.each do |name|
-            puts "KEYYYYYYYYYYYY"
+                    binding.pry
+
             puts new_hash.keys[name]
             if new_hash.keys.include?(name)
               sub_hash[attributes] = sub_hash[attributes].push(option_name)
