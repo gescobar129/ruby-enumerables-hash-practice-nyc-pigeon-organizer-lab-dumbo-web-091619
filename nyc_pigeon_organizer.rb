@@ -1,3 +1,5 @@
+require pry 
+
 def nyc_pigeon_organizer(data)
   new_array = []
   data.each do |attributes, option|
