@@ -16,7 +16,7 @@ def nyc_pigeon_organizer(data)
           inner_value.each do |element|
             puts "KEYYYYYYYYYYYY"
             puts new_hash.keys[element]
-            if new_hash.keys[element]
+            if new_hash.keys.include?(element)
               sub_hash[key] = sub_hash[key].push(inner_key)
             end
           puts sub_hash
