@@ -18,8 +18,8 @@ def nyc_pigeon_organizer(data)
           name_array.each do |name|
               binding.pry
 
-            puts new_hash.keys[name]
-            if new_hash.keys.include?(name)
+            puts name_hash.keys[name]
+            if name_hash.keys.include?(name)
               sub_hash[attributes] = sub_hash[attributes].push(option_name)
             end
           puts sub_hash
