@@ -1,8 +1,8 @@
 def nyc_pigeon_organizer(data)
   new_array = []
   data.each do |attributes, option|
-    value.each do |inner_key, inner_value|
-      new_array = new_array.concat(inner_value)
+    option.each do |option_name, name_array|
+      new_array = new_array.concat(name_array)
     end
   end
   #new_hash = {}
