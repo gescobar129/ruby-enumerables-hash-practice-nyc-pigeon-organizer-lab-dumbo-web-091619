@@ -19,6 +19,7 @@ def nyc_pigeon_organizer(data)
               sub_hash[key] = sub_hash[key].push(inner_key)
             end
           puts sub_hash
+          puts "OPOPOPOPOPOPOPOPPPPPOPOOPPOP"
           end
         end
       end
